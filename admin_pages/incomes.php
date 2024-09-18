@@ -72,12 +72,8 @@ require 'main_pages/top_nav.php';
                         <tr class="text-start">
                             <th>Case ID</th>
                             <th>Names</th>
-                            <th>Gender</th>
                             <th>Case Type</th>
-                            <th>Case Overview</th>
-                            <th>Assistance Suggestion</th>
                             <th>Submission Date</th>
-                            <th>Attachments</th>
                             <th class="text-center">Actions</th>
                         </tr>
 
@@ -93,43 +89,13 @@ require 'main_pages/top_nav.php';
                             $names = mysqli_escape_string($conn, $row['names']);
                             $gender = mysqli_escape_string($conn, $row['gender']);
                             $case_type = mysqli_escape_string($conn, $row['case_type']);
-                            $case_overview = mysqli_escape_string($conn, $row['case_overview']);
-                            $assistance_suggestion = mysqli_escape_string($conn, $row['assistance_suggestion']);
                             $submission_date = mysqli_escape_string($conn, $row['submission_date']);
-                            $attachments = json_decode($row['attachments'], true);
                             ?>
                             <tr class="text-start" style="text-align: center;">
                                 <td><?php echo $case_id; ?></td>
                                 <td><?php echo $names; ?></td>
-                                <td><?php echo ucfirst($gender); ?></td>
                                 <td><?php echo $case_type; ?></td>
-                                <td><?php echo $case_overview; ?></td>
-                                <td><?php echo $assistance_suggestion; ?></td>
                                 <td><?php echo $submission_date; ?></td>
-                                <td>
-                                    <?php
-                                    $attachments = json_decode($row['attachments'], true);
-
-                                    if (!empty($attachments)) {
-                                        foreach ($attachments as $file) {
-                                            echo '<a href="../casesDoc/' . $file . '" target="_blank">' . $file . '</a><br>';
-                                        }
-                                    } else {
-                                        echo "No attachments";
-                                    }
-                                    ?>
-                                </td>
-                                <td>
-                                    <?php
-                                    if (!empty($attachments)) {
-                                        foreach ($attachments as $file) {
-                                            echo '<a href="../casesDoc/' . $file . '" target="_blank">' . $file . '</a><br>';
-                                        }
-                                    } else {
-                                        echo "No attachments";
-                                    }
-                                    ?>
-                                </td>
                                 <td class="text-end" style="margin: 4px;">
                                     <a class="btn btn-success" role="button"
                                         href="view_case.php?id=<?php echo $case_id; ?>">

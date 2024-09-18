@@ -32,8 +32,8 @@
 				<div class="logo_sec">
 					<img src="logo.png" alt="code logo">
 					<div class="title_wrap">
-						<p class="title bold">Fresh Ink Co.</p>
-						<p class="sub_title">Fast And Foremost</p>
+						<p class="title bold">EndGBViolence.Co.</p>
+						<p class="sub_title">Start Today Let Your Voice Speak</p>
 					</div>
 				</div>
 				<div class="invoice_sec">

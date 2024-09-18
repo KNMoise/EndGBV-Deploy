@@ -1,0 +1,73 @@
+
+:root{
+    --primary-100:#0077C2;
+    --primary-200:#59a5f5;
+    --primary-300:#c8ffff;
+    --accent-100:#00BFFF;
+    --accent-200:#00619a;
+    --text-100:#333333;
+    --text-200:#5c5c5c;
+    --bg-100:#FFFFFF;
+    --bg-200:#f5f5f5;
+    --bg-300:#cccccc;
+    --color_white: #fff;
+    --color_prime: #5ad67d;
+    --color_grey: #e2e2e2;
+    --color_grey_dark: #a2a2a2;
+    }
+
+
+/* General Button Styling */
+.testimonial-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-100);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    animation: vibrate 0.3s linear infinite; /* Add vibrate animation */
+}
+
+/* Hover Effect */
+.testimonial-btn:hover {
+    background-color: var(--accent-100);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon Styling */
+.testimonial-btn i {
+    margin-right: 8px; /* Add space between icon and text */
+}
+
+/* Make the button text visible when hovered */
+.testimonial-btn:hover span {
+    display: inline;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/* Initially hide the text */
+.testimonial-btn span {
+    display: none;
+    transition: display 0.3s ease;
+}
+
+/* Vibrate Animation */
+@keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}

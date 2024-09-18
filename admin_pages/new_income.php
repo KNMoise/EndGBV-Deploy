@@ -76,7 +76,7 @@ require 'main_pages/top_nav.php';
                             <label class="form-label" for="marriage-status">
                                 <strong>Marriage Status</strong>
                             </label>
-                            <select class="form-control" id="marriage-status" name="marriage_status" required>
+                            <select class="form-control" id="marriage-status" name="marriage-status" required>
                                 <option value="" disabled selected>Select your status</option>
                                 <option value="single">Single</option>
                                 <option value="married">Married</option>
@@ -92,7 +92,7 @@ require 'main_pages/top_nav.php';
                             <label class="form-label" for="education-level">
                                 <strong>Education Level</strong>
                             </label>
-                            <select class="form-control" id="education-level" name="education_level" required>
+                            <select class="form-control" id="education-level" name="education-level" required>
                                 <option value="" disabled selected>Select your education level</option>
                                 <option value="no-formal-education">No Formal Education</option>
                                 <option value="primary-education">Primary Education</option>
@@ -108,7 +108,7 @@ require 'main_pages/top_nav.php';
                             <label class="form-label" for="religion-beliefs">
                                 <strong>Religion Beliefs</strong>
                             </label>
-                            <select class="form-control" id="religion-beliefs" name="religion_beliefs" required>
+                            <select class="form-control" id="religion-beliefs" name="religion-beliefs" required>
                                 <option value="" disabled selected>Select your religion</option>
                                 <option value="christianity">Christianity</option>
                                 <option value="islam">Islam</option>
@@ -125,7 +125,7 @@ require 'main_pages/top_nav.php';
                             <label class="form-label" for="display-name">
                                 <strong>Display Name</strong>
                             </label>
-                            <select class="form-control" id="display-name" name="display_name" required>
+                            <select class="form-control" id="display-name" name="display-name" required>
                                 <option value="1">Yes, display my name</option>
                                 <option value="0">No, keep me anonymous</option>
                             </select>
@@ -162,7 +162,7 @@ require 'main_pages/top_nav.php';
                             <label class="form-label" for="case-type">
                                 <strong>Case Type</strong>
                             </label>
-                            <select class="form-control" id="case-type" name="case_type" required>
+                            <select class="form-control" id="case-type" name="case-type" required>
                                 <option value="physical-violence">Physical Violence</option>
                                 <option value="sexual-violence">Sexual Violence</option>
                                 <option value="emotional-psychological-violence">Emotional Psychological Violence
@@ -190,7 +190,7 @@ require 'main_pages/top_nav.php';
                             <label class="form-label" for="case-overview">
                                 <strong>Case Overview</strong>
                             </label>
-                            <textarea class="form-control" rows="5" placeholder="Case Overview" name="case_overview"
+                            <textarea class="form-control" rows="5" placeholder="Case Overview" name="case-overview"
                                 required></textarea>
                         </div>
                     </div>

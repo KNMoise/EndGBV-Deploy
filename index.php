@@ -60,7 +60,7 @@
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <div class="ht-65 bd bg-gray-100 pd-x-20 d-flex align-items-center justify-content-between">
-                <a href="/">
+                <a href="index.php">
                     <img src="img/logo.png" alt="Logo" class="logo-img">
                 </a>
             </div>
@@ -187,7 +187,7 @@
                           </svg>
                         </div>
                     </button>
-                    <a href="/freshink" class="nav-item nav-link active">Home</a>
+                    <a href="index.php" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link ">About</a>
                     <a href="causes.html" class="nav-item nav-link">Causes</a>
                     <!-- <a href="donate.html" class="nav-item nav-link">Donate</a> -->

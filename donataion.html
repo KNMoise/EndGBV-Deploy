@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndGBViolence - Donate</title>
+    <link rel="stylesheet" href="css/donate.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Feed My Hungry Children</h1>
+        <div id="donationForm">
+            <h2>Select Donation Amount</h2>
+            <div class="preset-amounts">
+                <button class="amount-btn" data-amount="10000">RF 10K</button>
+                <button class="amount-btn" data-amount="40000">RF 40K</button>
+                <button class="amount-btn" data-amount="100000">RF 100K</button>
+            </div>
+            <input type="number" id="customAmount" placeholder="Custom amount">
+            <label>
+                <input type="checkbox" id="monthlyDonation">
+                Make this a monthly donation
+            </label>
+            <button id="nextBtn">Next</button>
+        </div>
+
+        <div id="donorInfo" style="display: none;">
+            <h2>Donor Information</h2>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <label>
+                <input type="checkbox" id="anonymousDonation">
+                Donate anonymously
+            </label>
+            <button id="backToDonation">Back</button>
+            <button id="toPayment">Next</button>
+        </div>
+
+        <div id="paymentInfo" style="display: none;">
+            <h2>Payment Information</h2>
+            <input type="text" id="cardNumber" placeholder="Card Number" required>
+            <input type="text" id="expiration" placeholder="MM/YY" required>
+            <input type="text" id="cvc" placeholder="CVC" required>
+            <label>
+                <input type="checkbox" id="coverFees">
+                Cover transaction fees
+            </label>
+            <button id="backToDonorInfo">Back</button>
+            <button id="submitDonation">Donate</button>
+        </div>
+
+        <div id="confirmation" style="display: none;">
+            <h2>Thank You for Your Donation!</h2>
+            <p id="confirmationDetails"></p>
+            <button id="shareSocial">Share on Social Media</button>
+        </div>
+    </div>
+    <script src="js/donate.js"></script>
+</body>
+</html>

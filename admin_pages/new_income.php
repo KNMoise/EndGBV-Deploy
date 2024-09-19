@@ -31,7 +31,7 @@ require 'main_pages/top_nav.php';
                 <div class="col-md-6 text-nowrap">
                     <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"
                         style="text-align: left;">
-                        <a class="btn btn-success btn-icon-split" role="button" href="view_cases.php">
+                        <a class="btn btn-success btn-icon-split" role="button" href="incomes.php">
                             <span class="text-white-50 icon">
                                 <i class="fas fa-eye"></i>
                             </span>

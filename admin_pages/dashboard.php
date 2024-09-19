@@ -149,7 +149,7 @@ require 'main_pages/top_nav.php';
                                     <h6><strong>Today</strong></h6><span class="badge bg-success"
                                         style="font-size: 12px;width: 50px;">
                                         <?php
-                                        $query = "SELECT job_id FROM incomes WHERE DATE(job_date) = CURDATE();";
+                                        $query = "SELECT id FROM case_submissions WHERE DATE(submission_date) = CURDATE();";
                                         $query2 = mysqli_query($conn, $query);
                                         $num = mysqli_num_rows($query2);
                                         echo $num;
@@ -160,7 +160,7 @@ require 'main_pages/top_nav.php';
                                     <h6><strong>This Week</strong></h6><span class="badge bg-success"
                                         style="font-size: 12px;width: 50px;">
                                         <?php
-                                        $query = "SELECT job_id FROM incomes WHERE WEEK(job_date) = WEEK(CURDATE());";
+                                        $query = "SELECT id FROM case_submissions WHERE WEEK(submission_date) = WEEK(CURDATE());";
                                         $query2 = mysqli_query($conn, $query);
                                         $num = mysqli_num_rows($query2);
                                         echo $num;
@@ -174,7 +174,7 @@ require 'main_pages/top_nav.php';
                                     <h6><strong>This Month</strong></h6><span class="badge bg-success"
                                         style="font-size: 12px;width: 50px;">
                                         <?php
-                                        $query = "SELECT job_id FROM incomes WHERE MONTH(job_date) = MONTH(CURDATE());";
+                                        $query = "SELECT id FROM case_submissions WHERE MONTH(submission_date) = MONTH(CURDATE());";
                                         $query2 = mysqli_query($conn, $query);
                                         $num = mysqli_num_rows($query2);
                                         echo $num;
@@ -185,7 +185,7 @@ require 'main_pages/top_nav.php';
                                     <h6><strong>This Year</strong></h6><span class="badge bg-success"
                                         style="font-size: 12px;width: 50px;">
                                         <?php
-                                        $query = "SELECT job_id FROM incomes WHERE YEAR(job_date) = YEAR(CURDATE());";
+                                        $query = "SELECT id FROM case_submissions WHERE YEAR(submission_date) = YEAR(CURDATE());";
                                         $query2 = mysqli_query($conn, $query);
                                         $num = mysqli_num_rows($query2);
                                         echo $num;

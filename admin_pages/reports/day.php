@@ -30,7 +30,7 @@
 				<div class="logo_sec">
 					<img src="logo.png" alt="code logo">
 					<div class="title_wrap">
-						<p class="title bold">Fresh Ink Co.</p>
+						<p class="title bold">EndGBV Co.</p>
 						<p class="sub_title">Fast And Foremost</p>
 					</div>
 				</div>
@@ -45,7 +45,7 @@
 						<span><?php echo date("d-m-Y") ?></span>
 					</p>
 					<p class="date">
-						<span class="bold">Currency</span>
+						<span class="bold"></span>
 						<span>RWF</span>
 					</p>
 				</div>
@@ -67,9 +67,9 @@
 				<div class="table_header">
 					<div class="row">
 						<div class="col col_no">#</div>
-						<div class="col col_des">Job</div>
-						<div class="col col_des">Earning</div>
-						<div class="col col_des">Expenses</div>
+						<div class="col col_des">Type Violence</div>
+						<div class="col col_des">Donations</div>
+						<div class="col col_des">Total</div>
 
 					</div>
 				</div>
@@ -81,9 +81,6 @@
 
 						while ($rows = mysqli_fetch_assoc($sql2)) {
 							
-						
-
-
 					?>
 					<div class="row">
 						<div class="col col_no">
@@ -130,7 +127,7 @@
 							$total_earnings = number_format($row1['total_earnings']);
 					?>
 			        <p>
-			            <span>Total Earnings</span>
+			            <span>Total Donations</span>
 			            <span><?php echo $total_earnings; ?></span>
 			        </p>
 			    	<?php 
@@ -141,7 +138,7 @@
 							$total_expense = number_format($row['total_expense']);
 					?>
 			        <p>
-			            <span>- Total Expenses</span>
+			            <span>- Total Shared</span>
 			            <span><?php echo $total_expense; ?></span>
 			        </p>
 			        
@@ -173,7 +170,7 @@
 		</div>
 		<div class="footer">
 			<div class="terms"> 
-		        <p style="text-align:center;">" At Fresh Ink Co., we are passionate about providing exceptional screen printing services that leave a lasting impression. As a leading screen printing company, we specialize in delivering high-quality and customized prints for businesses of all sizes! "</p>
+		        <p style="text-align:center;">We are a </p>
 		    </div>
 		</div>
 	</div>

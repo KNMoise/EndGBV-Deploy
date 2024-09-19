@@ -10,22 +10,22 @@
             $full_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
             if (strpos($full_url, "dashboard") !== false) {
-                echo "Welcome to FightingGBV Co. Management";
+                echo "Welcome to EndGBV Co. Management";
             }else if (strpos($full_url, "income") !== false || strpos($full_url, "job") !== false) {
-                 echo "Donations FightingGBV Co.";
+                 echo "EndGBV Co.";
 
             }else if (strpos($full_url, "expense") !== false) {
-                 echo "Expenses Tracking FightingGBV Co.";
+                 echo "Expenses Tracking EndGBV Co.";
             }else if (strpos($full_url, "email") !== false) {
-                 echo "Customer E-mails FightingGBV Co.";
+                 echo "Surviors E-mails EndGBV Co.";
             }else if (strpos($full_url, "report") !== false) {
-                 echo "Generate Reports FightingGBV Co.";
+                 echo "Generate Reports EndGBV Co.";
             }else if (strpos($full_url, "client") !== false) {
-                 echo "Editing CLient-side Contents FightingGBV Co.";
+                 echo "Editing CLient-side Contents EndGBV Co.";
             }else if (strpos($full_url, "user") !== false) {
-                 echo "System Users FightingGBV Co.";
+                 echo "System Users EndGBV Co.";
             }else if (strpos($full_url, "profile") !== false) {
-                 echo "Profiles FightingGBV Co.";
+                 echo "Profiles EndGBV Co.";
             }      
         ?>
     </title>
@@ -70,7 +70,7 @@
 
         var options = {
           chart: {
-            title: 'FightingGBV Co.',
+            title: 'EndGBV Co.',
             subtitle: 'Year: 2024',
           },
           bars: 'vertical', // Required for Material Bar Charts.

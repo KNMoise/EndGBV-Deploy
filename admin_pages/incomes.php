@@ -85,28 +85,28 @@ require 'main_pages/top_nav.php';
                         $query2 = mysqli_query($conn, $query);
 
                         while ($row = mysqli_fetch_assoc($query2)) {
-                            $case_id = $row['id']; // Assuming 'id' is the primary key in case_submissions
+                            $id = $row['id']; // Assuming 'id' is the primary key in case_submissions
                             $names = mysqli_escape_string($conn, $row['names']);
                             $gender = mysqli_escape_string($conn, $row['gender']);
                             $case_type = mysqli_escape_string($conn, $row['case_type']);
                             $submission_date = mysqli_escape_string($conn, $row['submission_date']);
                             ?>
                             <tr class="text-start" style="text-align: center;">
-                                <td><?php echo $case_id; ?></td>
+                                <td><?php echo $id; ?></td>
                                 <td><?php echo $names; ?></td>
                                 <td><?php echo $case_type; ?></td>
                                 <td><?php echo $submission_date; ?></td>
                                 <td class="text-end" style="margin: 4px;">
                                     <a class="btn btn-success" role="button"
-                                        href="view_case.php?id=<?php echo $case_id; ?>">
+                                        href="view_single_income.php?id=<?php echo $id; ?>">
                                         <i class="fas fa-eye" style="font-size: 18px;"></i>
                                     </a>
-                                    <a class="btn btn-warning" role="button" style="margin-left: 3px;"
-                                        href="edit_case.php?id=<?php echo $case_id; ?>">
+                                    <!-- <a class="btn btn-warning" role="button" style="margin-left: 3px;"
+                                        href="edit_case.php?id=<?php echo $id; ?>">
                                         <i class="far fa-edit"></i>
-                                    </a>
+                                    </a> -->
                                     <a class="btn btn-danger" role="button" name="delete" style="margin-left: 3px;"
-                                        href="operations/delete_case.php?id=<?php echo $case_id; ?>">
+                                        href="operations/delete_job?id=<?php echo $id; ?>">
                                         <i class="far fa-trash-alt"></i>
                                     </a>
                                 </td>

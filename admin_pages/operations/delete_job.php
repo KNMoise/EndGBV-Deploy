@@ -4,7 +4,10 @@
 
 	$id = mysqli_escape_string($conn, $_GET['id']);
 
-	$query = " DELETE FROM incomes WHERE job_id='$id'; ";
+	$caseId = $_GET['id'];
+
+	$query = " DELETE FROM FROM case_submissions WHERE id = $caseId";;
+	
 	$query2 = mysqli_query($conn, $query);
 
 	if ($query2) {

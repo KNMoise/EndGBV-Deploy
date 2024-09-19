@@ -1,8 +1,9 @@
 <footer class="bg-white sticky-footer">
     <div class="container my-auto">
-        <div class="text-center my-auto copyright"><span>Copyright © <a href="www.rwegohub.com"> FightingGBV Co.</a> <?php echo date("Y"); ?> Design
+        <div class="text-center my-auto copyright"><span>Copyright © <a href="www.rwegohub.com"> EndGBV Co.</a>
+                <?php echo date("Y"); ?> Design
                 &amp;
-                Developed By&nbsp;<a href="">DevMoise</a>&nbsp;</span></div>
+                Developed By&nbsp;<a href="">Rwegohub</a>&nbsp;</span></div>
     </div>
 </footer>
 </div><a class="border rounded d-inline scroll-to-top" href="#page-top" style="background: rgb(62,106,97);"><i

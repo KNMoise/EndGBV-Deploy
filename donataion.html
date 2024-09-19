@@ -1,61 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EndGBViolence - Donate</title>
-    <link rel="stylesheet" href="css/donate.css">
+    <link rel="stylesheet" href="css/donate.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div id="app">
-        <h1>Feed My Hungry Children</h1>
-        <div id="donationForm">
-            <h2>Select Donation Amount</h2>
-            <div class="preset-amounts">
-                <button class="amount-btn" data-amount="10000">RF 10K</button>
-                <button class="amount-btn" data-amount="40000">RF 40K</button>
-                <button class="amount-btn" data-amount="100000">RF 100K</button>
+    <!-- Donation Popup Modal -->
+    <div id="donationPopup" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="modal-body">
+                <!-- Image and Content for each step -->
+                <div class="modal-left">
+                    <img src="images/donation-step-1.jpg" id="modalImage" alt="Donation Step Image" />
+                    <p id="modalDescription">Your donation helps feed children in need.</p>
+                </div>
+                <!-- Donation Form -->
+                <div class="modal-right">
+                    <!-- Donation Amount -->
+                    <section id="donationForm" class="step">
+                        <h2>Select Donation Amount</h2>
+                        <div class="preset-amounts">
+                            <button class="amount-btn" data-amount="10000">10K</button>
+                            <button class="amount-btn" data-amount="40000">40K</button>
+                            <button class="amount-btn" data-amount="100000">100K</button>
+                        </div>
+                        <input type="number" id="customAmount" placeholder="Enter a custom amount" />
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="monthlyDonation" /> Make this a monthly donation
+                        </label>
+                        <button id="nextBtn" class="btn-primary">Next</button>
+                    </section>
+
+                    <!-- Donor Information -->
+                    <section id="donorInfo" class="step" style="display: none;">
+                        <h2>Donor Information</h2>
+                        <input type="text" id="firstName" placeholder="First Name" required />
+                        <input type="text" id="lastName" placeholder="Last Name" required />
+                        <input type="email" id="email" placeholder="Email" required />
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="anonymousDonation" /> Donate anonymously
+                        </label>
+                        <div class="button-group">
+                            <button id="backToDonation" class="btn-secondary">Back</button>
+                            <button id="toPayment" class="btn-primary">Next</button>
+                        </div>
+                    </section>
+
+                    <!-- Payment Information -->
+                    <section id="paymentInfo" class="step" style="display: none;">
+                        <h2>Payment Information</h2>
+
+                        <!-- Payment Type Selection -->
+                        <div class="payment-options">
+                            <label>
+                                <input type="radio" name="paymentMethod" value="card" checked />
+                                Credit/Debit Card
+                            </label>
+                            <label>
+                                <input type="radio" name="paymentMethod" value="paypal" />
+                                PayPal
+                            </label>
+                        </div>
+
+                        <!-- Card Payment Form -->
+                        <div id="cardPayment" class="payment-method">
+                            <input type="text" id="cardNumber" placeholder="Card Number" required />
+                            <input type="text" id="expiration" placeholder="MM/YY" required />
+                            <input type="text" id="cvc" placeholder="CVC" required />
+                        </div>
+
+                        <!-- PayPal Button (hidden initially) -->
+                        <div id="paypalPayment" class="payment-method" style="display: none;">
+                            <button id="paypalBtn">Pay with PayPal</button>
+                        </div>
+
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="coverFees" /> Cover transaction fees
+                        </label>
+
+                        <div class="button-group">
+                            <button id="backToDonorInfo" class="btn-secondary">Back</button>
+                            <button id="submitDonation" class="btn-primary">Donate</button>
+                        </div>
+                    </section>
+
+                    <!-- Confirmation -->
+                    <section id="confirmation" class="step" style="display: none;">
+                        <h2>Thank You for Your Donation!</h2>
+                        <p id="confirmationDetails"></p>
+                        <button id="shareSocial" class="btn-primary">Share on Social Media</button>
+                    </section>
+                </div>
             </div>
-            <input type="number" id="customAmount" placeholder="Custom amount">
-            <label>
-                <input type="checkbox" id="monthlyDonation">
-                Make this a monthly donation
-            </label>
-            <button id="nextBtn">Next</button>
-        </div>
-
-        <div id="donorInfo" style="display: none;">
-            <h2>Donor Information</h2>
-            <input type="text" id="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" placeholder="Last Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <label>
-                <input type="checkbox" id="anonymousDonation">
-                Donate anonymously
-            </label>
-            <button id="backToDonation">Back</button>
-            <button id="toPayment">Next</button>
-        </div>
-
-        <div id="paymentInfo" style="display: none;">
-            <h2>Payment Information</h2>
-            <input type="text" id="cardNumber" placeholder="Card Number" required>
-            <input type="text" id="expiration" placeholder="MM/YY" required>
-            <input type="text" id="cvc" placeholder="CVC" required>
-            <label>
-                <input type="checkbox" id="coverFees">
-                Cover transaction fees
-            </label>
-            <button id="backToDonorInfo">Back</button>
-            <button id="submitDonation">Donate</button>
-        </div>
-
-        <div id="confirmation" style="display: none;">
-            <h2>Thank You for Your Donation!</h2>
-            <p id="confirmationDetails"></p>
-            <button id="shareSocial">Share on Social Media</button>
         </div>
     </div>
+
+    <button id="openModal" class="btn-primary">Donate Now</button>
+
     <script src="js/donate.js"></script>
 </body>
 </html>

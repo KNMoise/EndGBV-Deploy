@@ -117,104 +117,49 @@
     <!-- Contact Start -->
     <div class="contact">
       <div class="container">
-        <div class="section-header text-center">
-          <p>Get In Touch</p>
-          <h2>Contact for any query</h2>
-        </div>
-        <div class="contact-img">
-          <img src="https://img.freepik.com/premium-photo/photograph-call-center-employee-their-workstation-wearing-headset-speaking-customer_148840-139632.jpg?ga=GA1.2.1539293128.1720825832&semt=ais_user" alt="Image" />
-        </div>
-        <div class="contact-form">
-          <div id="success"></div>
-          <div id="mc_embed_signup">
-            <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST" action="admin_pages/operations/send_mail_to_db.php">
-
-              <div id="mc_embed_signup_scroll">
-                <div class="control-group">
-                  <label for="mce-EMAIL"
-                    >Your Email <span class="asterisk">*</span></label
-                  >
-                  <input
-                    type="email"
-                    name="EMAIL"
-                    class="form-control required email"
-                    id="mce-EMAIL"
-                    required
-                  />
-                </div>
-                <div class="control-group">
-                  <label for="mce-FNAME"
-                    >Your Name <span class="asterisk">*</span></label
-                  >
-                  <input
-                    type="text"
-                    name="FNAME"
-                    class="form-control required text"
-                    id="mce-FNAME"
-                    required
-                  />
-                </div>
-                <div class="control-group">
-                  <label for="mce-SUBJECT"
-                    >Subject <span class="asterisk">*</span></label
-                  >
-                  <input
-                    type="text"
-                    name="SUBJECT"
-                    class="form-control required text"
-                    id="mce-SUBJECT"
-                    required
-                  />
-                </div>
-                <div class="control-group">
-                  <label for="mce-MESSAGE"
-                    >Message <span class="asterisk">*</span></label
-                  >
-                  <textarea
-                    name="MESSAGE"
-                    class="form-control required text"
-                    id="mce-MESSAGE"
-                    required
-                  ></textarea>
-                </div>
-                <div id="mce-responses" class="clear foot">
-                  <div
-                    class="response"
-                    id="mce-error-response"
-                    style="display: none"
-                  ></div>
-                  <div
-                    class="response"
-                    id="mce-success-response"
-                    style="display: none"
-                  ></div>
-                </div>
-                <div
-                  aria-hidden="true"
-                  style="position: absolute; left: -5000px"
-                >
-                  <input
-                    type="text"
-                    name="b_8f25ee48068cee2f8f0ad5558_aa2f602418"
-                    tabindex="-1"
-                    value=""
-                  />
-                </div>
-                <div>
-                  <button
-                    class="btn btn-custom"
-                    type="submit"
-                    id="mc-embedded-subscribe"
-                  >
-                    Send Message
-                  </button>
-                </div>
+          <div class="blog-section">
+              <div class="content">
+                  <p>Get In Touch</p>
+                  <h2>Contact for any query</h2>
               </div>
-            </form>
           </div>
-        </div>
+          <div class="contact-img">
+              <img src="https://img.freepik.com/premium-photo/focused-africanamerican-woman-exhibits-stop-symbol-holding-her-open-palm_868783-41352.jpg?ga=GA1.1.1539293128.1720825832&semt=ais_user"
+                  alt="Image">
+          </div>
+          <div class="contact-form">
+              <div id="thanksMessage" class="hidden"></div> <!-- Hidden "thanks" message -->
+              <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST"
+                  action="admin_pages/operations/send_mail_to_db.php">
+                  <div class="control-group">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name" name="name"
+                          required="required" data-validation-required-message="Please enter your name" />
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" email="email"
+                          required="required" data-validation-required-message="Please enter your email" />
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                      <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject"
+                          required="required" data-validation-required-message="Please enter a subject" />
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="control-group">
+                      <textarea class="form-control" id="message" placeholder="Message" name="message"
+                          required="required"
+                          data-validation-required-message="Please enter your message"></textarea>
+                      <p class="help-block text-danger"></p>
+                  </div>
+                  <div>
+                      <button class="btn btn-custom" type="submit">Send Message</button>
+                  </div>
+              </form>
+          </div>
       </div>
-    </div>
+  </div>
+
     <!-- Contact End -->
 
     <!-- Footer Start -->
@@ -301,6 +246,7 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
+    <script src="js/thanks.js"></script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>

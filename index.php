@@ -392,7 +392,7 @@
                                 relaxation techniques, Implement programs that focus on building self-esteem,
                                 confidence, and personal empowerment, helping survivors regain control over their lives.
                             </p>
-                            <a href="single.html">LearnMore</a>
+                            <a href="single.php">LearnMore</a>
                         </div>
                     </div>
                     <div class="causes-item">
@@ -408,7 +408,7 @@
                                 as videos, infographics, and quizzes, to make learning about gender equality interesting
                                 and accessible. Use storytelling and real-life examples to make the material relatable.
                             </p>
-                            <a href="single.html">LearnMore</a>
+                            <a href="single.php">LearnMore</a>
                         </div>
                     </div>
                     <div class="causes-item">
@@ -427,7 +427,7 @@
                             <p>
 
                             </p>
-                            <a href="single.html">LearnMore</a>
+                            <a href="single.php">LearnMore</a>
                         </div>
                     </div>
                 </div>

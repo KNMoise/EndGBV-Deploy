@@ -1,3 +1,7 @@
+<?php
+require 'admin_pages/includes/db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +32,7 @@
 
 <body>
     <!-- Top Bar Start -->
-    
+
     <!-- Top Bar End -->
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
@@ -50,7 +54,7 @@
                     <a href="causes.html" class="nav-item nav-link">Causes</a>
                     <a href="donate.html" class="nav-item nav-link">Donate</a>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    <a href="single.html" class="nav-item nav-link active">Blogs</a>
+                    <a href="single.php" class="nav-item nav-link active">Blogs</a>
                 </div>
             </div>
         </div>
@@ -64,8 +68,8 @@
                     <h2>Detail Page</h2>
                 </div>
                 <div class="col-12">
-                    <a href="/">Home</a>
-                    <a href="single.html">Blog</a>
+                    <a href="index.php">Home</a>
+                    <a href="single.php">Blog</a>
                 </div>
             </div>
         </div>
@@ -77,8 +81,8 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="single-content">
-                        <img
-                            src="https://img.freepik.com/free-photo/blogger-doing-product-review-laptop-keyboard_482257-26853.jpg?t=st=1723024941~exp=1723028541~hmac=f976bd8a259a78cd998df593d415292a57bf890458f0d1e9b8a7781e06993e6a&w=996"alt="singlepage" />
+                        <img src="https://img.freepik.com/free-photo/blogger-doing-product-review-laptop-keyboard_482257-26853.jpg?t=st=1723024941~exp=1723028541~hmac=f976bd8a259a78cd998df593d415292a57bf890458f0d1e9b8a7781e06993e6a&w=996"
+                            alt="singlepage" />
                         <h2>Educational initiatives for gender equality</h2>
                         <p class="causes-text" id="education">
                             <strong> Develop Engaging Content:</strong> Create interactive and engaging content, such as
@@ -239,7 +243,7 @@
                         </p>
                     </div>
                 </div>
-
+                <!-- Trying fetching featured popular and latest from database start  -->
                 <div class="col-lg-4">
                     <div class="sidebar">
                         <div class="sidebar-widget">
@@ -250,8 +254,11 @@
                                 </form>
                             </div>
                         </div>
-                        <a class="twitter-timeline" data-width="500" data-dnt="true" data-theme="dark" href="https://twitter.com/End_GBViolance?ref_src=twsrc%5Etfw">Tweets by End_GBViolance</a> 
+
+                        <a class="twitter-timeline" data-width="500" data-dnt="true" data-theme="dark"
+                            href="https://twitter.com/End_GBViolance?ref_src=twsrc%5Etfw">Tweets by End_GBViolance</a>
                         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
                         <div class="sidebar-widget">
                             <div class="tab-post">
                                 <ul class="nav nav-pills nav-justified">
@@ -267,195 +274,89 @@
                                 </ul>
 
                                 <div class="tab-content">
+                                    <!-- Featured Tab -->
                                     <div id="featured" class="container tab-pane active">
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-1.jpg" alt="Post Image 1" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-2.jpg" alt="Post Image 2" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-3.jpg" alt="Post Image 3" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-4.jpg" alt="Post Image 4" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-5.jpg" alt="Post Image 5" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php
+                                        require 'admin_pages/includes/db.php';
+
+                                        // Fetch Featured (all cases based on case_type)
+                                        $sql_featured = "SELECT * FROM case_submissions WHERE case_type IS NOT NULL";
+                                        $result_featured = $conn->query($sql_featured);
+
+                                        if ($result_featured) {
+                                            if ($result_featured->num_rows > 0) {
+                                                while ($row = $result_featured->fetch_assoc()) {
+                                                    echo '<div class="post-item">';
+                                                    echo '<div class="post-img"><img src="img/post-1.jpg" alt="Post Image"></div>';
+                                                    echo '<div class="post-text">';
+                                                    if (isset($row["case_title"])) {
+                                                        echo '<a href="#">' . htmlspecialchars($row["case_title"]) . '</a>';
+                                                    } else {
+                                                        echo '<p>No title available</p>';
+                                                    }
+                                                    echo '<div class="post-meta"><p>In <a href="#">' . htmlspecialchars($row["case_type"]) . '</a></p></div>';
+                                                    echo '</div></div>';
+                                                }
+                                            } else {
+                                                echo "<p>No featured cases found.</p>";
+                                            }
+                                        } else {
+                                            echo "<p>Error executing query: " . htmlspecialchars($conn->error) . "</p>";
+                                        }
+                                        ?>
                                     </div>
+
+                                    <!-- Popular Tab -->
                                     <div id="popular" class="container tab-pane fade">
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-1.jpg" alt="Post Image 1" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-2.jpg" alt="Post Image 2" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-3.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-4.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-5.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php
+                                        $sql_popular = "SELECT case_type, COUNT(case_type) AS count FROM case_submissions GROUP BY case_type ORDER BY count DESC";
+                                        $result_popular = $conn->query($sql_popular);
+
+                                        if ($result_popular && $result_popular->num_rows > 0) {
+                                            while ($row = $result_popular->fetch_assoc()) {
+                                                echo '<div class="post-item">';
+                                                echo '<div class="post-img"><img src="img/post-1.jpg" alt="Post Image"></div>';
+                                                echo '<div class="post-text"><a href="#">Most Submitted: ' . htmlspecialchars($row["case_type"]) . '</a>';
+                                                echo '<div class="post-meta"><p>' . htmlspecialchars($row["count"]) . ' submissions</p></div></div></div>';
+                                            }
+                                        } else {
+                                            echo "<p>No popular cases found.</p>";
+                                        }
+                                        ?>
                                     </div>
+
+                                    <!-- Latest Tab -->
                                     <div id="latest" class="container tab-pane fade">
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-1.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-2.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-3.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-4.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="post-item">
-                                            <div class="post-img">
-                                                <img src="img/post-5.jpg" />
-                                            </div>
-                                            <div class="post-text">
-                                                <a href="">Lorem ipsum dolor sit amet consec adipis elit</a>
-                                                <div class="post-meta">
-                                                    <p>By<a href="">Admin</a></p>
-                                                    <p>In<a href="">Web Design</a></p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <?php
+                                        $sql_latest = "SELECT * FROM case_submissions ORDER BY submission_date DESC LIMIT 5";
+                                        $result_latest = $conn->query($sql_latest);
+
+                                        if ($result_latest && $result_latest->num_rows > 0) {
+                                            while ($row = $result_latest->fetch_assoc()) {
+                                                echo '<div class="post-item">';
+                                                echo '<div class="post-img"><img src="img/post-1.jpg" alt="Post Image"></div>';
+                                                echo '<div class="post-text">';
+                                                if (isset($row["case_title"])) {
+                                                    echo '<a href="#">' . htmlspecialchars($row["case_title"]) . '</a>';
+                                                } else {
+                                                    echo '<p>No title available</p>';
+                                                }
+                                                echo '<div class="post-meta"><p>On ' . htmlspecialchars($row["submission_date"]) . '</p></div></div></div>';
+                                            }
+                                        } else {
+                                            echo "<p>No latest cases found.</p>";
+                                        }
+                                        ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <?php
+                        // Close the database connection
+                        $conn->close();
+                        ?>
+
                         <div class="sidebar-widget">
                             <h2 class="widget-title">Categories</h2>
                             <div class="category-widget">
@@ -487,12 +388,11 @@
                         </div>
                     </div>
                 </div>
+                <!-- Trying fetching featured popular and latest from database ends  -->
             </div>
         </div>
     </div>
     <!-- Single Post End-->
-
-
     <!-- Footer Start -->
     <div class="footer">
         <div class="container">
@@ -504,13 +404,17 @@
                         <p><i class="fa fa-phone-alt"></i>+250780330073</p>
                         <p><i class="fa fa-envelope"></i>info@EndGBV.com</p>
                         <div class="footer-social">
-                            <a class="btn btn-custom" href="https://x.com/End_GBViolance?t=OyQQF5HbujZ3DqKJnMaVJQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-custom" href="https://www.instagram.com/rameck_gisanintwari?igsh=aTc3MG5uN21wMzZw" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-custom" href="https://www.facebook.com/XMR55?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-custom" href="https://x.com/End_GBViolance?t=OyQQF5HbujZ3DqKJnMaVJQ&s=09"
+                                target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-custom"
+                                href="https://www.instagram.com/rameck_gisanintwari?igsh=aTc3MG5uN21wMzZw"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-custom" href="https://www.facebook.com/XMR55?mibextid=ZbWKwL"
+                                target="_blank"><i class="fab fa-facebook-f"></i></a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-link">
                         <h2>Popular Links</h2>
@@ -552,7 +456,8 @@
                 <!-- terms & condition -->
                 <div class="col-md-6 text-md-right">
                     <p>
-                        Developed by <a href="https://www.rwegohub.com/" target="_blank">Rwegohub</a> | © 2024 All Rights Reserved
+                        Developed by <a href="https://www.rwegohub.com/" target="_blank">Rwegohub</a> | © 2024 All
+                        Rights Reserved
                         <a href="www.EndGBV.com"></a>
                     </p>
                 </div>

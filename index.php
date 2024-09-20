@@ -590,7 +590,7 @@
                         alt="Image">
                 </div>
                 <div class="contact-form">
-                    <div id="success"></div>
+                    <div id="thanksMessage" class="hidden"></div> <!-- Hidden "thanks" message -->
                     <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST"
                         action="admin_pages/operations/send_mail_to_db.php">
                         <div class="control-group">
@@ -615,14 +615,13 @@
                             <p class="help-block text-danger"></p>
                         </div>
                         <div>
-                            <button class="btn btn-custom" type="submit">Send
-                                Message</button>
+                            <button class="btn btn-custom" type="submit">Send Message</button>
                         </div>
                     </form>
-                    <!-- <div  class="success-message"></div> -->
                 </div>
             </div>
         </div>
+
         <!-- Contact End -->
         <!-- Blog Start -->
         <div class="blog">
@@ -783,6 +782,7 @@
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
         <script src="js/testmo.js"></script>
+        <script src="js/thanks.js"></script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>

@@ -691,6 +691,10 @@
             </div>
         </div>
         <!-- Blog End -->
+         <!-- Team section start  -->
+          
+          <!-- Team section ends  -->
+
         <!-- Footer Start -->
         <div class="footer">
             <div class="container">
@@ -730,6 +734,7 @@
                             <a href="terms.html">Terms of use</a>
                             <a href="privacy.html">Privacy policy</a>
                             <a href="admin_login.php">Administrator</a>
+                            <a href="team.html">Our Team</a>
                             <a href="question.html">FAQs</a>
                         </div>
                     </div>

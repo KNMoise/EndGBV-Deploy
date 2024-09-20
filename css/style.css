@@ -2438,36 +2438,10 @@ button:hover .star-6 {
 
 .terms .row p {
   font-size: 16px;
-  color: #666;
+  color: var(--color_grey_dark);
   line-height: 1.6;
 }
 /* terms ends here */
-/* cookies starts here  */
-.cookie-notice {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  display: none;
-
-  z-index: 1000;
-}
-
-.cookie-notice p {
-  margin: 0;
-  padding-right: 10px;
-}
-
-.cookie-notice button {
-  margin-left: 10px;
-}
-
-/* cookies ends here  */
-
 
 .logo-img {
   height: 100px; 
@@ -2606,8 +2580,8 @@ button:hover .star-6 {
 #thanksMessage {
   display: none;
   padding: 15px;
-  background-color: #28a745;
-  color: white;
+  background-color: var(--color_prime);
+  color: var(--bg-100) ;
   text-align: center;
   border-radius: 5px;
   margin-bottom: 20px;

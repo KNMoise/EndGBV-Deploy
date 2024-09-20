@@ -28,6 +28,7 @@ require 'admin_pages/includes/db.php';
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tips.css">
 </head>
 
 <body>
@@ -287,12 +288,12 @@ require 'admin_pages/includes/db.php';
                                             if ($result_featured->num_rows > 0) {
                                                 while ($row = $result_featured->fetch_assoc()) {
                                                     echo '<div class="post-item">';
-                                                    echo '<div class="post-img"><img src="img/post-1.jpg" alt="Post Image"></div>';
+                                                    echo '<div class="post-img"><img src="img/unknow.jpg" alt="Post Image"></div>';
                                                     echo '<div class="post-text">';
                                                     if (isset($row["case_title"])) {
                                                         echo '<a href="#">' . htmlspecialchars($row["case_title"]) . '</a>';
                                                     } else {
-                                                        echo '<p>No title available</p>';
+                                                        echo '<p>End Gender Based Violence</p>';
                                                     }
                                                     echo '<div class="post-meta"><p>In <a href="#">' . htmlspecialchars($row["case_type"]) . '</a></p></div>';
                                                     echo '</div></div>';
@@ -315,7 +316,7 @@ require 'admin_pages/includes/db.php';
                                         if ($result_popular && $result_popular->num_rows > 0) {
                                             while ($row = $result_popular->fetch_assoc()) {
                                                 echo '<div class="post-item">';
-                                                echo '<div class="post-img"><img src="img/post-1.jpg" alt="Post Image"></div>';
+                                                echo '<div class="post-img"><img src="img/unknow.jpg" alt="Post Image"></div>';
                                                 echo '<div class="post-text"><a href="#">Most Submitted: ' . htmlspecialchars($row["case_type"]) . '</a>';
                                                 echo '<div class="post-meta"><p>' . htmlspecialchars($row["count"]) . ' submissions</p></div></div></div>';
                                             }
@@ -334,10 +335,10 @@ require 'admin_pages/includes/db.php';
                                         if ($result_latest && $result_latest->num_rows > 0) {
                                             while ($row = $result_latest->fetch_assoc()) {
                                                 echo '<div class="post-item">';
-                                                echo '<div class="post-img"><img src="img/post-1.jpg" alt="Post Image"></div>';
+                                                echo '<div class="post-img"><img src="img/unknow.jpg" alt="Post Image"></div>';
                                                 echo '<div class="post-text">';
-                                                if (isset($row["case_title"])) {
-                                                    echo '<a href="#">' . htmlspecialchars($row["case_title"]) . '</a>';
+                                                if (isset($row["case_type"])) {
+                                                    echo '<a href="#">' . htmlspecialchars($row["case_type"]) . '</a>';
                                                 } else {
                                                     echo '<p>No title available</p>';
                                                 }
@@ -361,19 +362,99 @@ require 'admin_pages/includes/db.php';
                             <h2 class="widget-title">Categories</h2>
                             <div class="category-widget">
                                 <ul>
-                                    <li><a href="">Physical Violence</a><span>(98)</span></li>
-                                    <li><a href="">Sexual Violence</a><span>(87)</span></li>
-                                    <li><a href="">Emotional Psychological Violence</a><span>(76)</span></li>
-                                    <li><a href="">Harmful-Traditional and Customs</a><span>(65)</span></li>
-                                    <li><a href="">Online & Digital Violence</a><span>(54)</span></li>
-                                    <li><a href="">Structural Violence</a><span>(43)</span></li>
+                                    <?php
+                                    // Database connection
+                                    require 'admin_pages/includes/db.php';
+
+                                    // Define the exact case types from your database
+                                    $case_types = [
+                                        'physical-violence',
+                                        'Sexual-Violence',
+                                        'emotional-psychological-violence',
+                                        'harmful-traditional-practices',
+                                        'online-digital-violence',
+                                        'structural-violence',
+                                        'economic-violence'
+                                    ];
+
+                                    // Loop through each case type to get the count of cases
+                                    foreach ($case_types as $case_type) {
+                                        // Prepare the query using a prepared statement to avoid SQL injection and handle case types properly
+                                        $stmt = $conn->prepare("SELECT COUNT(*) AS case_count FROM case_submissions WHERE case_type = ?");
+                                        $stmt->bind_param("s", $case_type);  // "s" specifies a string parameter
+                                    
+                                        // Execute the statement
+                                        $stmt->execute();
+
+                                        // Bind the result to a variable
+                                        $stmt->bind_result($case_count);
+
+                                        // Fetch the result
+                                        $stmt->fetch();
+
+                                        // Close the statement
+                                        $stmt->close();
+
+                                        // Display each category with the dynamic count
+                                        echo '<li><a href="#">' . htmlspecialchars($case_type) . '</a><span>(' . intval($case_count) . ')</span></li>';
+                                    }
+
+                                    // Close the database connection
+                                    $conn->close();
+                                    ?>
                                 </ul>
                             </div>
                         </div>
 
+
                         <div class="sidebar-widget">
                             <div class="image-widget">
-                                <a href="#"><img src="img/blog-3.jpg" alt="Image"></a>
+                                <a href="#"><img src="img/nomore.jpg" alt="Image"></a>
+                            </div>
+                            <h2 class="widget-title">Tips & Actions</h2>
+                            <div class="tips-widget">
+                                <ul class="tips-list">
+                                    <li>
+                                        <strong>1. Stay Safe:</strong>
+                                        Prioritize your safety above all else. If you're in immediate danger, find a
+                                        safe place and contact authorities.
+                                    </li>
+                                    <li>
+                                        <strong>2. Support a Friend:</strong>
+                                        If you know someone facing violence, listen without judgment and encourage them
+                                        to seek help from professionals.
+                                    </li>
+                                    <li>
+                                        <strong>3. Speak Out:</strong>
+                                        Don't stay silent. If you witness violence, report it to local authorities or
+                                        helplines. Your action can make a difference.
+                                    </li>
+                                    <li>
+                                        <strong>4. Seek Professional Help:</strong>
+                                        Contact local helplines, support groups, or shelters for guidance on handling
+                                        violent situations.
+                                    </li>
+                                    <li>
+                                        <strong>5. Documentation:</strong>
+                                        If safe to do so, document the incident. Keep records or evidence like photos,
+                                        text messages, or call logs for later use.
+                                    </li>
+                                    <li>
+                                        <strong>6. Report Online Abuse:</strong>
+                                        If you're experiencing or witnessing violence online, report the accounts or
+                                        posts on the platform and consider blocking the abuser.
+                                    </li>
+                                    <li>
+                                        <strong>7. Offer Resources:</strong>
+                                        Share hotline numbers, shelter addresses, or professional contacts for
+                                        counseling or legal advice with the victim.
+                                    </li>
+                                </ul>
+                                <div class="contact-helpline">
+                                    <p><strong>Helpline: ISANGE ONE STOP CENTER</strong> <a href="tel:3512">3512</a></p>
+                                    <p><strong>Email Support: For Seeking Advocacy</strong> <a
+                                            href="mailto:support@endgbviolence.com">support@endgbviolence.com</a></p>
+                                </div>
                             </div>
                         </div>
 

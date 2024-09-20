@@ -41,7 +41,7 @@
 }
 
 .tips-list li strong {
-    color: var(--accent-200); /* Emphasize strong text with red */
+    color: var(--accent-200); 
     font-weight: bold;
 }
 

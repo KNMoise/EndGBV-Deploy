@@ -1102,16 +1102,23 @@ a:focus {
   position: relative;
   width: 100%;
   padding: 45px 0 15px 0;
+  border-radius: 10px;
 }
 
 .team .team-item {
   position: relative;
   margin-bottom: 35px;
+  transition: transform 0.3s ease;
+}
+
+.team .team-item:hover {
+  transform: translateY(-10px);
 }
 
 .team .team-img {
   position: relative;
   overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 .team .team-img img {
@@ -1122,7 +1129,7 @@ a:focus {
 }
 
 .team .team-item:hover img {
-  margin: -15px 0 0 0;
+  transform: scale(1.2);
 }
 
 .team .team-text {
@@ -1136,16 +1143,20 @@ a:focus {
   background: var(--bg-100);
   transition: 0.3s;
   overflow: hidden;
+  box-shadow: 0 -10px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
 .team .team-text h2 {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
+  color: var(--primary-200);
 }
 
 .team .team-text p {
   margin-bottom: 20px;
+  color: var(--accent-100);
 }
 
 .team .team-social {
@@ -1164,17 +1175,61 @@ a:focus {
   color: var(--primary-200);
   border: 2px solid var(--primary-100);
   transition: 0.3s;
+  border-radius: 50%;
 }
 
 .team .team-social a:hover {
   color: #20212b;
   background: var(--accent-100);
+  transform: rotate(360deg);
 }
 
 .team .team-item:hover .team-text {
   height: 160px;
 }
 
+/* New cool feature: Skill bars */
+.team-skills {
+  padding: 20px;
+  background: var(--bg-100);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.team-item:hover .team-skills {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.skill-bar {
+  margin-bottom: 10px;
+}
+
+.skill-bar p {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--primary-200);
+}
+
+.skill-bar-inner {
+  height: 10px;
+  background: var(--primary-100);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  position: absolute;
+  height: 100%;
+  background: var(--accent-100);
+  border-radius: 5px;
+  width: 0;
+  transition: width 1s ease;
+}
 /*******************************/
 /******* Testimonial CSS *******/
 /*******************************/

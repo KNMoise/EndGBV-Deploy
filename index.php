@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FightingGBV-Home</title>
+    <title>EndGBV-Home</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
@@ -40,7 +40,7 @@
                         </div>
                         <div class="text">
                             <i class="fa fa-envelope"></i>
-                            <p>info@fightingGBVorg</p>
+                            <p>info@EndGBVorg</p>
                         </div>
                     </div>
                 </div>
@@ -683,41 +683,7 @@
                 </div>
                 <div class="row">
                     <!-- Testimonial 1 -->
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="https://images.unsplash.com/photo-1640573819451-f9ae97e48f77?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHx2aW9sZW5jZXxlbnwwfHwwfHx8MA%3D%3D"
-                                    alt="Image">
-                            </div>
-                            <div class="blog-text">
-                                <h3><a  class="read-more">Testimony of Gratitude by Mupenzi
-                                        Frank</a></h3>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="https://images.unsplash.com/photo-1640573819451-f9ae97e48f77?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHx2aW9sZW5jZXxlbnwwfHwwfHx8MA%3D%3D"
-                                    alt="Image">
-                            </div>
-                            <div class="blog-text">
-                                <h3><a href="#fullstory1" class="read-more">Escaping the Nightmare</a></h3>
-                                <p class="short-content">
-                                    Jane's life changed forever when she met her abuser at 16. After years of enduring
-                                    control and violence, she finally escaped with the help of a local shelter...
-                                </p>
-                                <p class="full-content">
-                                    Jane's life changed forever when she met her abuser at 16. After years of enduring
-                                    control and violence, she finally escaped with the help of a local shelter. She was
-                                    able to rebuild her life, find strength, and support from others who shared similar
-                                    experiences.
-                                </p>
-                                
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="col-lg-4">
                         <div class="blog-item">
                             <div class="blog-img">
@@ -729,20 +695,6 @@
                                 <p>Jane's life changed forever when she met her abuser at 16. After years of enduring
                                     control and violence, she finally escaped with the help of a local shelter...</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="https://images.unsplash.com/photo-1640573819451-f9ae97e48f77?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHx2aW9sZW5jZXxlbnwwfHwwfHx8MA%3D%3D"
-                                    alt="Image">
-                            </div>
-                            <div class="blog-text">
-                                <h3><a href="#fullstory1" class="read-more">Escaping the Nightmare</a></h3>
-                                <p>Jane's life changed forever when she met her abuser at 16. After years of enduring
-                                    control and violence, she finally escaped with the help of a local shelter...</p>
-                            </div>
-                            
                         </div>
                     </div>
                     <!-- Testimonial 2 -->
@@ -771,9 +723,12 @@
                                     alt="Image">
                             </div>
                             <div class="blog-text">
-                                <h3><a href="#fullstory3" class="read-more">Taking Action: Community Involvement</a>
+                                <h3><a href="#fullstory3" class="read-more">Community Involvement</a>
                                 </h3>
                                 <p>Read about our community involvement and how you can contribute to our cause.</p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-book"></i><a href="#fullstory3" class="read-more">Read Full Story</a></p>
                             </div>
                         </div>
                     </div>
@@ -792,7 +747,7 @@
                             <h2>Our Head Office</h2>
                             <p><i class="fa fa-map-marker-alt"></i>Kigali KN20 Street </p>
                             <p><i class="fa fa-phone-alt"></i>+250785455562</p>
-                            <p><i class="fa fa-envelope"></i>info@fightingGBV.com</p>
+                            <p><i class="fa fa-envelope"></i>info@EndGBV.com</p>
                             <div class="footer-social">
                                 <a class="btn btn-custom" href="https://x.com/End_GBViolance?t=OyQQF5HbujZ3DqKJnMaVJQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-custom" href="https://www.instagram.com/rameck_gisanintwari?igsh=aTc3MG5uN21wMzZw" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -842,7 +797,7 @@
                     <div class="col-md-6 text-md-right">
                         <p>
                             Developed by <a href="https://www.rwegohub.com/" target="_blank">Rwegohub</a> | © 2024 All Rights Reserved
-                            <a href="www.fightinggbv.com"></a>
+                            <a href="www.EndGBV.com"></a>
                         </p>
                     </div>
                 </div>

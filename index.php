@@ -20,14 +20,14 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <!-- Template Stylesheet -->
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/case.css">
 
 
 </head>
 
 <body>
-   
+
     <!-- Top Bar Start -->
     <div class="top-bar d-none d-md-block">
         <div class="container-fluid">
@@ -47,9 +47,12 @@
                 <div class="col-md-4">
                     <div class="top-bar-right">
                         <div class="social">
-                            <a href="https://x.com/End_GBViolance?t=OyQQF5HbujZ3DqKJnMaVJQ&s=09"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/XMR55?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/rameck_gisanintwari?igsh=aTc3MG5uN21wMzZw" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://x.com/End_GBViolance?t=OyQQF5HbujZ3DqKJnMaVJQ&s=09"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/XMR55?mibextid=ZbWKwL" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/rameck_gisanintwari?igsh=aTc3MG5uN21wMzZw"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -73,118 +76,82 @@
                     <button id="scrollButton">
                         Testimony
                         <div class="star-1">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xml:space="preserve"
-                            version="1.1"
-                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                            viewBox="0 0 784.11 815.53"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs></defs>
-                            <g id="Layer_x0020_1">
-                              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                              <path
-                                class="fil0"
-                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                              ></path>
-                            </g>
-                          </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <g id="Layer_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                    <path class="fil0"
+                                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                    </path>
+                                </g>
+                            </svg>
                         </div>
                         <div class="star-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xml:space="preserve"
-                            version="1.1"
-                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                            viewBox="0 0 784.11 815.53"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs></defs>
-                            <g id="Layer_x0020_1">
-                              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                              <path
-                                class="fil0"
-                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                              ></path>
-                            </g>
-                          </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <g id="Layer_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                    <path class="fil0"
+                                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                    </path>
+                                </g>
+                            </svg>
                         </div>
                         <div class="star-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xml:space="preserve"
-                            version="1.1"
-                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                            viewBox="0 0 784.11 815.53"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs></defs>
-                            <g id="Layer_x0020_1">
-                              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                              <path
-                                class="fil0"
-                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                              ></path>
-                            </g>
-                          </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <g id="Layer_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                    <path class="fil0"
+                                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                    </path>
+                                </g>
+                            </svg>
                         </div>
                         <div class="star-4">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xml:space="preserve"
-                            version="1.1"
-                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                            viewBox="0 0 784.11 815.53"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs></defs>
-                            <g id="Layer_x0020_1">
-                              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                              <path
-                                class="fil0"
-                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                              ></path>
-                            </g>
-                          </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <g id="Layer_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                    <path class="fil0"
+                                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                    </path>
+                                </g>
+                            </svg>
                         </div>
                         <div class="star-5">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xml:space="preserve"
-                            version="1.1"
-                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                            viewBox="0 0 784.11 815.53"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs></defs>
-                            <g id="Layer_x0020_1">
-                              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                              <path
-                                class="fil0"
-                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                              ></path>
-                            </g>
-                          </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <g id="Layer_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                    <path class="fil0"
+                                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                    </path>
+                                </g>
+                            </svg>
                         </div>
                         <div class="star-6">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            xml:space="preserve"
-                            version="1.1"
-                            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                            viewBox="0 0 784.11 815.53"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                          >
-                            <defs></defs>
-                            <g id="Layer_x0020_1">
-                              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                              <path
-                                class="fil0"
-                                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
-                              ></path>
-                            </g>
-                          </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1"
+                                style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                viewBox="0 0 784.11 815.53" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <g id="Layer_x0020_1">
+                                    <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                                    <path class="fil0"
+                                        d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z">
+                                    </path>
+                                </g>
+                            </svg>
                         </div>
                     </button>
                     <a href="index.php" class="nav-item nav-link active">Home</a>
@@ -213,7 +180,7 @@
                             up, speak out, and support survivors. Every
                             action counts.
                         </p>
-                        
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -228,7 +195,7 @@
                             providing aid and resources to those affected by
                             gender-based violence.
                         </p>
-                        
+
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -243,16 +210,16 @@
                             dignity and strength. Let's create a future free
                             from violence.
                         </p>
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Carousel End --> 
+    <!-- Carousel End -->
 
     <!-- About Start -->
-     
+
     <div class="about">
         <div class="container">
             <div class="row align-items-center">
@@ -398,10 +365,10 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Service End -->
         <!-- Causes Start -->
-         
+
         <div class="causes">
             <div class="container">
                 <div class="blog-section">
@@ -416,7 +383,7 @@
                             <img src="https://img.freepik.com/free-photo/people-showing-support-respect-with-yellow-background-suicide-prevention-day_23-2151607905.jpg?t=st=1723037902~exp=1723041502~hmac=7c184fb3b97531e8f22654998cc300449ef6f05102c7bc88e15e6e15b53e0f13&w=1060"
                                 alt="Image">
                         </div>
-        
+
                         <div class="causes-text">
                             <h3>Support Survivors of Gender-Based Violence</h3>
                             <p>
@@ -458,7 +425,7 @@
                                 services.
                             </p>
                             <p>
-        
+
                             </p>
                             <a href="single.html">LearnMore</a>
                         </div>
@@ -470,160 +437,143 @@
 
 
         <!-- case Start -->
-        <div id="volunteer" class="volunteer" data-parallax="scroll" data-image-src="https://img.freepik.com/free-photo/young-child-getting-physical-abuse-from-parent_23-2150248248.jpg?ga=GA1.1.1539293128.1720825832&semt=sph">
-        <div class="container">
-          <div class="row align-items-center" id="testimonial-section">
-            <div class="col-lg-5">
-              <div class="volunteer-form">
-                <form
-                  action="admin_pages/operations/send_case_to_db.php"
-                  id="multiStepForm"
-                  method="POST"
-                  enctype="multipart/form-data"
-                >
-                  <div class="form-step active">
-                    <h4>Step 1: Personal Information</h4>
-                    <label for="names">Names:</label>
-                    <input type="text" id="names" name="names" required />
-                    <label for="gender">Gender:</label>
-                    <select name="gender" id="gender" required>
-                      <option value="" disabled selected>Select your gender</option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-                      <option value="not-specified">Other</option>
-                    </select>
-                    <label for="marriage-status">Marriage Status:</label>
-                    <select id="marriage-status" name="marriage-status" required>
-                      <option value="" disabled selected>Select your status</option>
-                      <option value="single">Single</option>
-                      <option value="married">Married</option>
-                      <option value="divorced">Divorced</option>
-                      <option value="widowed">Widowed</option>
-                      <option value="relationship">Relationship</option>
-                      <option value="other">Other</option>
-                    </select>
-                    <button type="button" class="next-step">Next</button>
-                  </div>
-                  <div class="form-step">
-                    <h4>Step 2: Education and Religion</h4>
-                    <label for="education-level">Education Level:</label>
-                    <select id="education-level" name="education-level" required>
-                      <option value="" disabled selected>
-                        Select your education level
-                      </option>
-                      <option value="no-formal-education">No Formal Education</option>
-                      <option value="primary-education">Primary Education</option>
-                      <option value="secondary-education">Secondary Education</option>
-                      <option value="bachelor-degree">Bachelor's Degree</option>
-                      <option value="master-degree">Master's Degree</option>
-                      <option value="doctorate">Doctorate</option>
-                    </select>
-                    <label for="religion-beliefs">Religion Beliefs:</label>
-                    <select id="religion-beliefs" name="religion-beliefs" required>
-                      <option value="" disabled selected>Select your religion</option>
-                      <option value="christianity">Christianity</option>
-                      <option value="islam">Islam</option>
-                      <option value="hinduism">Hinduism</option>
-                      <option value="buddhism">Buddhism</option>
-                      <option value="judaism">Judaism</option>
-                      <option value="atheism">Atheism</option>
-                      <option value="other">Other</option>
-                    </select>
-                    <label for="display-name">Display Name:</label>
-                    <select id="display-name" name="display-name" required>
-                      <option value="1">Yes, display my name</option>
-                      <option value="0">No, keep me anonymous</option>
-                    </select>
-                    <button type="button" class="prev-step">Previous</button>
-                    <button type="button" class="next-step">Next</button>
-                  </div>
-                  <div class="form-step">
-                    <h4>Step 3: Contact Information</h4>
-                    <label for="residence">Place of Residence:</label>
-                    <input type="text" id="residence" name="residence" required />
-                    <label for="phone">Phone Numbers:</label>
-                    <input type="tel" id="phone" name="phone" required />
-                    <label for="email">Email:</label>
-                    <input
-                      type="text"
-                      id="social-media"
-                      name="email"
-                      required
-                    />
-                    <button type="button" class="prev-step">Previous</button>
-                    <button type="button" class="next-step">Next</button>
-                  </div>
-                  <div class="form-step">
-                    <h4>Step 4: Type of Case</h4>
-                    <label for="case-type">Select Type of Case:</label>
-                    <select id="case-type" name="case-type" required>
-                      <option value="physical-violence">Physical Violence</option>
-                      <option value="sexual-violence">Sexual Violence</option>
-                      <option value="emotional-psychological-violence">
-                        Emotional Psychological Violence
-                      </option>
-                      <option value="harmful-traditional-practices">
-                        Harmful Traditional Practices and Customs
-                      </option>
-                      <option value="online-digital-violence">
-                        Online and Digital Violence
-                      </option>
-                      <option value="structural-violence">Structural Violence</option>
-                      <option value="economic-violence">Economic Violence</option>
-                    </select>
-                    <button type="button" class="prev-step">Previous</button>
-                    <button type="button" class="next-step">Next</button>
-                  </div>
-                  <div class="form-step">
-                    <h4>Step 5: Case Overview and Attachments</h4>
-                    <label for="case-overview">Case Overview:</label>
-                    <textarea
-                      id="case-overview"
-                      name="case-overview"
-                      required
-                    ></textarea>
-                    <label for="attachments">Attachments:</label>
-                    <input type="file" id="attachments" name="attachments" multiple />
-                    <button type="button" class="prev-step">Previous</button>
-                    <button type="button" class="next-step">Next</button>
-                  </div>
-                  <div class="form-step">
-                    <h4>Step 6: Victim's Assistance Suggestion</h4>
-                    <label for="assistance-suggestion"
-                      >Victim’s Assistance Suggestion:</label
-                    >
-                    <textarea
-                      id="assistance-suggestion"
-                      name="assistance-suggestion"
-                      required
-                    ></textarea>
-                    <button type="button" class="prev-step">Previous</button>
-                    <button type="submit" name="submit">submit</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="volunteer-content">
-                <div class="section-header">
-                  <p>Empowering Voices Against Gender-Based Violence</p>
-                  <h2>Your Safety and Anonymity: Our Top Priorities"</h2>
-                  <!-- <h2>Inspiring the young and old generation by sharing your testimonial to the society</h2> -->
+        <div id="volunteer" class="volunteer" data-parallax="scroll"
+            data-image-src="https://img.freepik.com/free-photo/young-child-getting-physical-abuse-from-parent_23-2150248248.jpg?ga=GA1.1.1539293128.1720825832&semt=sph">
+            <div class="container">
+                <div class="row align-items-center" id="testimonial-section">
+                    <div class="col-lg-5">
+                        <div class="volunteer-form">
+                            <form action="admin_pages/operations/send_case_to_db.php" id="multiStepForm" method="POST"
+                                enctype="multipart/form-data">
+                                <div class="form-step active">
+                                    <h4>Step 1: Personal Information</h4>
+                                    <label for="names">Names:</label>
+                                    <input type="text" id="names" name="names" required />
+                                    <label for="gender">Gender:</label>
+                                    <select name="gender" id="gender" required>
+                                        <option value="" disabled selected>Select your gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="not-specified">Other</option>
+                                    </select>
+                                    <label for="marriage-status">Marriage Status:</label>
+                                    <select id="marriage-status" name="marriage-status" required>
+                                        <option value="" disabled selected>Select your status</option>
+                                        <option value="single">Single</option>
+                                        <option value="married">Married</option>
+                                        <option value="divorced">Divorced</option>
+                                        <option value="widowed">Widowed</option>
+                                        <option value="relationship">Relationship</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                                <div class="form-step">
+                                    <h4>Step 2: Education and Religion</h4>
+                                    <label for="education-level">Education Level:</label>
+                                    <select id="education-level" name="education-level" required>
+                                        <option value="" disabled selected>
+                                            Select your education level
+                                        </option>
+                                        <option value="no-formal-education">No Formal Education</option>
+                                        <option value="primary-education">Primary Education</option>
+                                        <option value="secondary-education">Secondary Education</option>
+                                        <option value="bachelor-degree">Bachelor's Degree</option>
+                                        <option value="master-degree">Master's Degree</option>
+                                        <option value="doctorate">Doctorate</option>
+                                    </select>
+                                    <label for="religion-beliefs">Religion Beliefs:</label>
+                                    <select id="religion-beliefs" name="religion-beliefs" required>
+                                        <option value="" disabled selected>Select your religion</option>
+                                        <option value="christianity">Christianity</option>
+                                        <option value="islam">Islam</option>
+                                        <option value="hinduism">Hinduism</option>
+                                        <option value="buddhism">Buddhism</option>
+                                        <option value="judaism">Judaism</option>
+                                        <option value="atheism">Atheism</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <label for="display-name">Display Name:</label>
+                                    <select id="display-name" name="display-name" required>
+                                        <option value="1">Yes, display my name</option>
+                                        <option value="0">No, keep me anonymous</option>
+                                    </select>
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                                <div class="form-step">
+                                    <h4>Step 3: Contact Information</h4>
+                                    <label for="residence">Place of Residence:</label>
+                                    <input type="text" id="residence" name="residence" required />
+                                    <label for="phone">Phone Numbers:</label>
+                                    <input type="tel" id="phone" name="phone" required />
+                                    <label for="email">Email:</label>
+                                    <input type="text" id="social-media" name="email" required />
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                                <div class="form-step">
+                                    <h4>Step 4: Type of Case</h4>
+                                    <label for="case-type">Select Type of Case:</label>
+                                    <select id="case-type" name="case-type" required>
+                                        <option value="physical-violence">Physical Violence</option>
+                                        <option value="sexual-violence">Sexual Violence</option>
+                                        <option value="emotional-psychological-violence">
+                                            Emotional Psychological Violence
+                                        </option>
+                                        <option value="harmful-traditional-practices">
+                                            Harmful Traditional Practices and Customs
+                                        </option>
+                                        <option value="online-digital-violence">
+                                            Online and Digital Violence
+                                        </option>
+                                        <option value="structural-violence">Structural Violence</option>
+                                        <option value="economic-violence">Economic Violence</option>
+                                    </select>
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                                <div class="form-step">
+                                    <h4>Step 5: Case Overview and Attachments</h4>
+                                    <label for="case-overview">Case Overview:</label>
+                                    <textarea id="case-overview" name="case-overview" required></textarea>
+                                    <label for="attachments">Attachments:</label>
+                                    <input type="file" id="attachments" name="attachments" multiple />
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="button" class="next-step">Next</button>
+                                </div>
+                                <div class="form-step">
+                                    <h4>Step 6: Victim's Assistance Suggestion</h4>
+                                    <label for="assistance-suggestion">Victim’s Assistance Suggestion:</label>
+                                    <textarea id="assistance-suggestion" name="assistance-suggestion"
+                                        required></textarea>
+                                    <button type="button" class="prev-step">Previous</button>
+                                    <button type="submit" name="submit">submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="volunteer-content">
+                            <div class="section-header">
+                                <p>Empowering Voices Against Gender-Based Violence</p>
+                                <h2>Your Safety and Anonymity: Our Top Priorities"</h2>
+                                <!-- <h2>Inspiring the young and old generation by sharing your testimonial to the society</h2> -->
+                            </div>
+                            <div class="volunteer-text">
+                                <p>
+                                    Dear Brave Souls, Your courage to share your experiences with
+                                    gender-based violence is a beacon of hope and strength for
+                                    countless others. Each testimonial is not just a story; it’s a
+                                    powerful testament to resilience and the unyielding human spirit.
+                                    By coming forward, you are not only shedding light on the darkness
+                                    but also empowering others to find their voices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="volunteer-text">
-                  <p>
-                    Dear Brave Souls, Your courage to share your experiences with
-                    gender-based violence is a beacon of hope and strength for
-                    countless others. Each testimonial is not just a story; it’s a
-                    powerful testament to resilience and the unyielding human spirit.
-                    By coming forward, you are not only shedding light on the darkness
-                    but also empowering others to find their voices.
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
         </div>
         <!-- Member End -->
         <!-- Contact Start -->
@@ -641,29 +591,31 @@
                 </div>
                 <div class="contact-form">
                     <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST" action="admin_pages/operations/send_mail_to_db.php">
+                    <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST"
+                        action="admin_pages/operations/send_mail_to_db.php">
                         <div class="control-group">
                             <input type="text" class="form-control" id="name" placeholder="Your Name" name="name"
                                 required="required" data-validation-required-message="Please enter your name" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" email="email" 
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" email="email"
                                 required="required" data-validation-required-message="Please enter your email" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" 
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject"
                                 required="required" data-validation-required-message="Please enter a subject" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
-                            <textarea class="form-control" id="message" placeholder="Message" name="message"  required="required"
+                            <textarea class="form-control" id="message" placeholder="Message" name="message"
+                                required="required"
                                 data-validation-required-message="Please enter your message"></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                         <div>
-                            <button class="btn btn-custom" type="submit" >Send
+                            <button class="btn btn-custom" type="submit">Send
                                 Message</button>
                         </div>
                     </form>
@@ -682,62 +634,64 @@
                     </div>
                 </div>
                 <div class="row">
-                    <!-- Testimonial 1 -->
-                   
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="https://images.unsplash.com/photo-1640573819451-f9ae97e48f77?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHx2aW9sZW5jZXxlbnwwfHwwfHx8MA%3D%3D"
-                                    alt="Image">
-                            </div>
-                            <div class="blog-text">
-                                <h3><a href="#fullstory1" class="read-more">Escaping the Nightmare</a></h3>
-                                <p>Jane's life changed forever when she met her abuser at 16. After years of enduring
-                                    control and violence, she finally escaped with the help of a local shelter...</p>
-                            </div>
+                    <div class="container">
+                        <div class="row">
+                            <?php
+                            $stories = [
+                                [
+                                    "id" => 1,
+                                    "title" => "Escaping the Nightmare",
+                                    "shortDescription" => "Jane's life changed forever when she met her abuser at 16...",
+                                    "fullStory" => "Jane's life took a dark turn when she met her abuser at the tender age of 16. What started as a seemingly innocent relationship quickly spiraled into a nightmare of control and abuse. For years, Jane endured physical and emotional torment, isolated from friends and family. But with the help of a supportive colleague and a local women's shelter, she found the strength to break free. Today, Jane is an advocate for domestic violence survivors, sharing her story to inspire hope in others facing similar struggles.",
+                                    "image" => "https://images.unsplash.com/photo-1640573819451-f9ae97e48f77?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgzfHx2aW9sZW5jZXxlbnwwfHwwfHx8MA%3D%3D"
+                                ],
+                                [
+                                    "id" => 2,
+                                    "title" => "Community Involvement",
+                                    "shortDescription" => "Read about our community involvement and how you can contribute to our cause.",
+                                    "fullStory" => "Our organization has been at the forefront of combating domestic violence through various community initiatives. From hosting awareness workshops in schools to partnering with local businesses for fundraising events, we've made significant strides in breaking the silence surrounding abuse. Our volunteer program has grown exponentially, with dedicated individuals offering their time and skills to support survivors. By fostering a network of care and understanding, we're creating a safer community for all. Join us in our mission - whether through volunteering, donations, or simply spreading awareness, every action counts in our collective fight against domestic violence.",
+                                    "image" => "https://media.istockphoto.com/id/1349240822/photo/parental-violence.webp?b=1&s=170667a&w=0&k=20&c=xlZuI0L83FsIjxJIau4OY2orUuSU7geYZM31KQu3Tm4="
+                                ],
+                                [
+                                    "id" => 3,
+                                    "title" => "Breaking Free from Silence",
+                                    "shortDescription" => "For years, Sarah suffered in silence, afraid to speak out.",
+                                    "fullStory" => "Sarah's story is one of resilience and courage. For years, she endured abuse behind closed doors, afraid to speak out due to threats and manipulation from her partner. The turning point came when she confided in a coworker who recognized the signs of abuse and offered support. With guidance from a domestic violence hotline, Sarah carefully planned her escape. It wasn't easy - she faced financial hardships and emotional turmoil - but with each passing day, she grew stronger. Today, Sarah is rebuilding her life, pursuing her dreams, and helping other survivors find their voice. Her journey from victim to survivor serves as a powerful reminder that it's never too late to reclaim one's life and dignity.",
+                                    "image" => "https://media.istockphoto.com/id/1271523891/photo/man-threatening-a-woman-in-the-bedroom.webp?b=1&s=170667a&w=0&k=20&c=czJqfx5WCZoYYDQYh7blKSN6QrHecV1d0V_n5lBSYr4="
+                                ]
+                            ];
+
+                            foreach ($stories as $story) {
+                                echo "<div class='col-sm-12 col-sm-6 col-lg-4'>";
+                                echo "<div class='story-card'>";
+                                echo "<img src='{$story['image']}' alt='{$story['title']}' class='story-image'>";
+                                echo "<div class='story-content'>";
+                                echo "<h3 class='story-title'>{$story['title']}</h3>";
+                                echo "<p class='story-description'>{$story['shortDescription']}</p>";
+                                echo "<a href='#' class='read-more-btn' data-story-id='{$story['id']}'>Read Full Story</a>";
+                                echo "</div>";
+                                echo "</div>";
+                                echo "</div>";
+                            }
+                            ?>
                         </div>
                     </div>
-                    <!-- Testimonial 2 -->
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="https://media.istockphoto.com/id/1271523891/photo/man-threatening-a-woman-in-the-bedroom.webp?b=1&s=170667a&w=0&k=20&c=czJqfx5WCZoYYDQYh7blKSN6QrHecV1d0V_n5lBSYr4="
-                                    alt="Image">
-                            </div>
-                            <div class="blog-text">
-                                <h3><a href="#fullstory2" class="read-more">Breaking Free from Silence</a></h3>
-                                <p>For years, Sarah suffered in silence, afraid to speak out. It wasn't until a friend
-                                    noticed the signs of abuse that she found the courage to leave...</p>
-                            </div>
-                            <div class="blog-meta">
-                                <p><i class="fa fa-book"></i><a href="#fullstory2" class="read-more">Read Full
-                                        Story</a></p>
-                            </div>
+
+                    <div id="storyModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h2 id="modalTitle"></h2>
+                            <img id="modalImage" src="" alt=""
+                                style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px;">
+                            <p id="modalContent"></p>
                         </div>
                     </div>
-                    <!-- Testimonial 3 -->
-                    <div class="col-lg-4">
-                        <div class="blog-item">
-                            <div class="blog-img">
-                                <img src="https://media.istockphoto.com/id/1349240822/photo/parental-violence.webp?b=1&s=170667a&w=0&k=20&c=xlZuI0L83FsIjxJIau4OY2orUuSU7geYZM31KQu3Tm4="
-                                    alt="Image">
-                            </div>
-                            <div class="blog-text">
-                                <h3><a href="#fullstory3" class="read-more">Community Involvement</a>
-                                </h3>
-                                <p>Read about our community involvement and how you can contribute to our cause.</p>
-                            </div>
-                            <div class="blog-meta">
-                                <p><i class="fa fa-book"></i><a href="#fullstory3" class="read-more">Read Full Story</a></p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+
             </div>
         </div>
         <!-- Blog End -->
-
-        
         <!-- Footer Start -->
         <div class="footer">
             <div class="container">
@@ -749,13 +703,18 @@
                             <p><i class="fa fa-phone-alt"></i>+250785455562</p>
                             <p><i class="fa fa-envelope"></i>info@EndGBV.com</p>
                             <div class="footer-social">
-                                <a class="btn btn-custom" href="https://x.com/End_GBViolance?t=OyQQF5HbujZ3DqKJnMaVJQ&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-custom" href="https://www.instagram.com/rameck_gisanintwari?igsh=aTc3MG5uN21wMzZw" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a class="btn btn-custom" href="https://www.facebook.com/XMR55?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-custom"
+                                    href="https://x.com/End_GBViolance?t=OyQQF5HbujZ3DqKJnMaVJQ&s=09" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-custom"
+                                    href="https://www.instagram.com/rameck_gisanintwari?igsh=aTc3MG5uN21wMzZw"
+                                    target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-custom" href="https://www.facebook.com/XMR55?mibextid=ZbWKwL"
+                                    target="_blank"><i class="fab fa-facebook-f"></i></a>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Popular Links</h2>
@@ -796,7 +755,8 @@
                     <!-- terms & condition -->
                     <div class="col-md-6 text-md-right">
                         <p>
-                            Developed by <a href="https://www.rwegohub.com/" target="_blank">Rwegohub</a> | © 2024 All Rights Reserved
+                            Developed by <a href="https://www.rwegohub.com/" target="_blank">Rwegohub</a> | © 2024 All
+                            Rights Reserved
                             <a href="www.EndGBV.com"></a>
                         </p>
                     </div>
@@ -828,13 +788,59 @@
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <!-- scroll to the case form on click  -->
         <script>
-            document.getElementById('scrollButton').addEventListener('click', function() {
+            document.getElementById('scrollButton').addEventListener('click', function () {
                 document.getElementById('volunteer').scrollIntoView({
                     behavior: 'smooth'
                 });
             });
         </script>
         <!-- subscribtion pop up -->
+        <script>
+            var modal = document.getElementById("storyModal");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // Get all "Read Full Story" buttons
+            var btns = document.getElementsByClassName("read-more-btn");
+
+            // Add click event to all buttons
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].onclick = function (e) {
+                    e.preventDefault();
+                    var storyId = this.getAttribute("data-story-id");
+                    openModal(storyId);
+                }
+            }
+
+            // Function to open modal and populate it with story content
+            function openModal(storyId) {
+                // In a real application, you would fetch this data from the server
+                // For this example, we'll use the PHP array we defined earlier
+                var stories = <?php echo json_encode($stories); ?>;
+                var story = stories.find(s => s.id == storyId);
+
+                if (story) {
+                    document.getElementById("modalTitle").innerText = story.title;
+                    document.getElementById("modalImage").src = story.image;
+                    document.getElementById("modalImage").alt = story.title;
+                    document.getElementById("modalContent").innerText = story.fullStory;
+                    modal.style.display = "block";
+                }
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 
 </body>
 

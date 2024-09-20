@@ -22,8 +22,9 @@
 body {
   color: var(--text-200);
   font-weight: 500;
+  line-height: 1.6;
   background: var(--bg-100);
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand",Arial, sans-serif;
 }
 
 h1,
@@ -2467,37 +2468,6 @@ button:hover .star-6 {
 
 /* cookies ends here  */
 
-.modal {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  max-width: 600px;
-  width: 100%;
-  overflow-y: auto;
-}
-
-.modal h4 {
-  margin-top: 0;
-}
-
-.modal button.close {
-  background-color: var(--accent-100);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-
-.modal button.close:hover {
-  background-color: var(--accent-200);
-}
 
 .logo-img {
   height: 100px; /* Adjust height to fit your design */
@@ -2511,54 +2481,125 @@ button:hover .star-6 {
   width: auto;
 }
 
-.blog-item {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 20px;
-  height: 400px; /* Set a fixed height for the blog item */
-  overflow: hidden;
-  position: relative;
+
+/* starting with the testimony uploaded from backend and modal */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px; /* Added padding to avoid content touching the edges */
 }
 
-.blog-img img {
+.story-card {
+  background-color: var(--bg-100);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.story-image {
   width: 100%;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
 }
 
-.blog-text {
-  max-height: 200px; /* Set max-height for the text content */
-  overflow: hidden;
-  transition: max-height 0.3s ease;
+.story-content {
+  padding: 20px;
 }
 
-.blog-text.expanded {
-  max-height: 500px; /* Expand the height when clicked */
+.story-title {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.short-content {
-  display: block;
+.read-more-btn {
+  display: inline-block;
+  background-color: var(--accent-200);
+  color: var(--bg-100);
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
-.full-content {
+.read-more-btn:hover {
+  background-color: var(--accent-100);
+}
+
+.modal {
   display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
-.blog-item .read-more-btn {
-  display: block;
-  margin-top: 10px;
-  color: #007bff;
+.modal-content {
+  background-color: var(--bg-100);
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid var(--primary-100);
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.close {
+  color: var(--primary-100);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
   text-decoration: none;
   cursor: pointer;
 }
 
-.blog-item.expanded .full-content {
-  display: block;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .story-content {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .story-title {
+    font-size: 1.2rem; /* Adjust title size */
+  }
+
+  .read-more-btn {
+    padding: 8px 12px; /* Slightly smaller buttons */
+  }
+
+  .modal-content {
+    width: 90%; /* Ensure modal fits smaller screens */
+  }
 }
 
-.blog-item.expanded .short-content {
-  display: none;
+@media (max-width: 480px) {
+  .story-card {
+    border-radius: 4px; /* Tighter rounding on small devices */
+  }
+
+  .story-image {
+    height: 150px; /* Smaller image height */
+  }
+
+  .read-more-btn {
+    padding: 7px 10px;
+  }
+
+  .modal-content {
+    margin: 10% auto;
+  }
 }
 
-.blog-item.expanded .read-more-btn::after {
-  content: " Show Less";
-}
+/* starting with the testimony uploaded from backend and modal */
+
+

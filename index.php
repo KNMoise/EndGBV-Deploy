@@ -558,7 +558,6 @@
                             <div class="section-header">
                                 <p>Empowering Voices Against Gender-Based Violence</p>
                                 <h2>Your Safety and Anonymity: Our Top Priorities"</h2>
-                                <!-- <h2>Inspiring the young and old generation by sharing your testimonial to the society</h2> -->
                             </div>
                             <div class="volunteer-text">
                                 <p>

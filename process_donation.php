@@ -32,8 +32,8 @@ $payment_method = $data['paymentMethod'];
 if ($payment_method === 'card') {
     // Initialize Stripe SDK
     \Stripe\Stripe::setApiKey('pk_test_51PEuv1RpuOpFQB4xFh9TFy52cZhDVZSrGLNr92pYBohyh5oLi60hEy4E2nGndEj6xD9fg82sUfWEBH4fNrPcuIQG00zPDpjWgu');
-     // Replace with your Stripe secret key
-    
+    // Replace with your Stripe secret key
+
     try {
         $charge = \Stripe\Charge::create([
             'amount' => $amount * 100,  // Convert to cents
@@ -59,18 +59,18 @@ if ($payment_method === 'card') {
 
     $redirectUrls = new PayPal\Api\RedirectUrls();
     $redirectUrls->setReturnUrl("https://your-website.com/success.php")
-                 ->setCancelUrl("https://your-website.com/cancel.php");
+        ->setCancelUrl("https://your-website.com/cancel.php");
 
     $payment = new PayPal\Api\Payment();
     $payment->setIntent('sale')
-            ->setPayer($payer)
-            ->setTransactions([$transaction])
-            ->setRedirectUrls($redirectUrls);
+        ->setPayer($payer)
+        ->setTransactions([$transaction])
+        ->setRedirectUrls($redirectUrls);
 
     try {
         // Create the payment on PayPal's servers
         $payment->create($paypal);
-        
+
         // Redirect the user to PayPal to approve the payment
         echo json_encode(['redirect_url' => $payment->getApprovalLink()]);
     } catch (Exception $e) {

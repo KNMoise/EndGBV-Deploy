@@ -72,7 +72,7 @@
             will review your case and reach out to you via your email.  </p>
         <p>If you have any urgent questions or concerns, feel free to contact us at <a
                 href="mailto:support@endgbv.com">support@endgbv.com</a>.</p>
-        <a href="/freshink" class="back-home">Go Back to Homepage</a>
+        <a href="https://endgbviolence.com/" class="back-home">Go Back to Homepage</a>
     </div>
 </body>
 

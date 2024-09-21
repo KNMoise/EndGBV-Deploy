@@ -53,7 +53,7 @@ if(isset($_FILES["attachments"])) {
 
         // Move the file to the uploads directory
         if (move_uploaded_file($file_tmp, $target_file)) {
-            echo "The file has been uploaded.";
+            header('Location: ../thank_you.php');
 
             // Insert data into the correct table (case_submissions)
             $sql = "INSERT INTO case_submissions (names, gender, marriage_status, education_level, religion_beliefs, display_name, residence, phone, email, case_type, case_overview, assistance_suggestion, attachments)

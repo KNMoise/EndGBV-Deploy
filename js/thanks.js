@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const thanksMessage = document.getElementById("thanksMessage");
 
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent form submission
-
+        e.preventDefault(); 
         const formData = new FormData(form);
         fetch(form.action, {
             method: "POST",
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             if (data.status === "success") {
                 showThanksMessage("Message sent successfully!", "success");
-                form.reset(); // Reset form after successful submission
+                form.reset(); 
             } else {
                 showThanksMessage(data.message || "Something went wrong. Please try again.", "error");
             }
@@ -36,6 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         setTimeout(() => {
             thanksMessage.style.display = "none";
-        }, 5000); // Hide the message after 5 seconds
+        }, 5000); 
     }
 });
